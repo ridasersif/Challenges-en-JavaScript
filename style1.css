@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+   
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(70, 119, 208);
+    height: 60px;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav div{
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+}

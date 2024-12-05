@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Change Background Color</title>
+ 
+</head>
+<body>
+    <nav>
+        <a href="challenge1.html"><div>1</div></a>
+        <a href="challenge2.html"><div>2</div></a>
+        <a href="challenge3.html"><div>3</div></a>
+        <a href="challenge4.html"><div>4</div></a>
+        <a href="challenge5.html"><div>5</div></a>
+        <a href="challenge6.html"><div>6</div></a>
+        <a href="challenge7.html"><div>7</div></a>
+        <a href="challenge8.html"><div>8</div></a>
+        <a href="challenge9.html"><div>9</div></a>
+        <a href="challenge10.html"><div>10</div></a>
+    </nav>
+
+
+
+
+    
+      <div class="content">
+        <button id="btn">click</button>
+      </div>
+      <style>
+        .content{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             font-family: Arial, sans-serif;
+             transition: background-color 0.5s ease;
+           }
+           button {
+             font-size: 24px;
+             width: 200px;
+             height: 80px;
+             border-radius: 10px;
+           }
+         </style>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', function () {
+      document.body.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    });
+    document.getElementById('btn').addEventListener('click', function () {
+        document.getElementById('btn').style.backgroundColor =`rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    });
+  </script>
+</body>
+</html>
