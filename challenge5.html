@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="challenge1.html"><div>1</div></a>
+        <a href="challenge2.html"><div>2</div></a>
+        <a href="challenge3.html"><div>3</div></a>
+        <a href="challenge4.html"><div>4</div></a>
+        <a href="challenge5.html"><div>5</div></a>
+        <a href="challenge6.html"><div>6</div></a>
+        <a href="challenge7.html"><div>7</div></a>
+        <a href="challenge8.html"><div>8</div></a>
+        <a href="challenge9.html"><div>9</div></a>
+        <a href="challenge10.html"><div>10</div></a>
+    </nav>
+    <div class="container">
+    <button id="clickButton">click </button>
+    <p> nombre de click: <span id="count">0</span></p>
+    </div>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            margin-top: 100px;
+        }
+    </style>
+
+    <script>
+        const clickButton = document.getElementById("clickButton");
+        const count = document.getElementById("count");
+        let clickCount = 0;
+
+        clickButton.onclick = function() {
+            clickCount++; 
+            count.textContent = clickCount; 
+        }
+    </script>
+
+</body>
+</html>
